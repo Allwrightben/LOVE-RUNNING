@@ -3,32 +3,32 @@
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* General styles */
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* Generic project styles */
-  color: #3a3a3a;
-  font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header */
 header {
-  background-color: #ffffff;
-  padding: 0 1rem;
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  box-shadow: 0 2px 2px #3a3a3a;
-  display:flex;
-  justify-content: space-between;
-  align-items: baseline;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -54,7 +54,7 @@ h1 {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a ;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* navbar styles with dropdown toggle*/
@@ -75,7 +75,7 @@ nav {
 }
 
 #nav-toggle {
-    display: none ;
+    display: none;
 }
 
 .nav-toggle-label {
@@ -84,18 +84,19 @@ nav {
 
 /* main content */
 main {
-  background-color: lightblue;
-  flex: 1 0 auto;
-  margin-top: 47px;
+    background-color: lightblue;
+    flex: 1 0 auto;
+    margin-top: 47px;
 }
 
 /*footer*/
 footer {
-  background-color: orange;
+    background-color: orange;
 }
 
 /* media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
+
     /* Header*/
     nav {
         display: block;
@@ -106,12 +107,13 @@ footer {
     }
 
     #menu {
-      display: flex;  
+        display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
@@ -126,5 +128,12 @@ footer {
     main {
         /* push main header down to accomodate larger header */
         margin-top: 75px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
