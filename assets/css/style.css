@@ -175,6 +175,19 @@ benefits p {
     /*creates a grid of meeting time divs over the background image*/
     border: 2px solid white;
 }
+#times h3 {
+    color: #fafafa;
+}
+
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
 
 /*footer*/
 #social-networks {
@@ -191,9 +204,6 @@ benefits p {
     color: #3a3a3a;
 }
 
-#times h3 {
-    color: #fafafa;
-}
 /* media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
